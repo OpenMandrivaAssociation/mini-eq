@@ -86,7 +86,7 @@ cp -a extensions/gnome-shell/%{uuid}/* \
 %{python3_sitelib}/%{pypi_name}-*.dist-info/
 %{_datadir}/applications/%{rdn_name}.desktop
 %{_datadir}/icons/scalable/apps/io.github.bhack.mini-eq.svg
-%{_datadir}/symbolic/apps/io.github.bhack.mini-eq-symbolic.svg
+%{_datadir}/icons/symbolic/apps/io.github.bhack.mini-eq-symbolic.svg
 %{_datadir}/metainfo/%{rdn_name}.metainfo.xml
 %doc README*
 
