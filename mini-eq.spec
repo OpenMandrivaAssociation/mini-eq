@@ -1,11 +1,7 @@
-%bcond_without check
-
-%global beta %{nil}
 %global uuid mini-eq@bhack.github.io
 %global rdn_name io.github.bhack.mini-eq
 %global pypi_name mini_eq
 %global shell_ver 50
-%global pwg_ver 0.3.9
 
 Name:           mini-eq
 Version:        0.8.7
@@ -33,11 +29,6 @@ BuildRequires:  python-numpy
 BuildRequires:  python-cairo
 BuildRequires:	pkgconfig(libadwaita-1)
 BuildRequires:	pkgconfig(gtk4)
-
-%if %{with check}
-BuildRequires:  python-pytest
-BuildRequires:  python-pytest-cov
-%endif
 
 Requires: pipewire
 Requires: pipewire-gobject
@@ -88,11 +79,6 @@ cp -a data/%{rdn_name}.metainfo.xml \
 
 cp -a extensions/gnome-shell/%{uuid}/* \
     %{buildroot}%{_datadir}/gnome-shell/extensions/%{uuid}/
-
-%check
-%if %{with check}
-%pytest
-%endif
 
 %files
 %{_bindir}/mini-eq
