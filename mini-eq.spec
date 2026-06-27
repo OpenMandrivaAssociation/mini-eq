@@ -32,6 +32,7 @@ BuildRequires:	pkgconfig(gtk4)
 
 Requires: pipewire
 Requires: %{_lib}pipewire-gobject
+Requires: python%{pyver}dist(pipewire-gobject)
 Requires: wireplumber
 Requires: %{_lib}ebur128_1
 Requires: gtk4
