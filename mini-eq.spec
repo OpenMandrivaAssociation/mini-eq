@@ -22,6 +22,7 @@ BuildRequires:  python-build
 BuildRequires:  python-installer
 BuildRequires:  python-setuptools
 BuildRequires:  python-wheel
+BuildRequires:  python-pip
 
 BuildRequires:  desktop-file-utils
 BuildRequires:  appstream
@@ -38,14 +39,15 @@ BuildRequires:  python-pytest
 BuildRequires:  python-pytest-cov
 %endif
 
-Requires:       pipewire
-Requires:	pipewire-gobject
-Requires:       wireplumber
-Requires:       %{_lib}ebur128_1
-Requires:	gtk4
-Requires:       python-gobject3
-Requires:       python-numpy
-Requires:	typelib(Adw)
+Requires: pipewire
+Requires: pipewire-gobject
+Requires: wireplumber
+Requires: %{_lib}ebur128_1
+Requires: gtk4
+Requires: python-gobject3
+Requires: python-numpy
+Requires: typelib(Adw)
+Requires: typelib(Pwg)
 
 %description
 Mini EQ is a small system-wide parametric equalizer for PipeWire desktops.
