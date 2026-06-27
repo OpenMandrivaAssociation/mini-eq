@@ -1,3 +1,5 @@
+%global __requires_exclude ^python3\\..*dist\\(pipewire-gobject\\).*$
+
 %global uuid mini-eq@bhack.github.io
 %global rdn_name io.github.bhack.mini-eq
 %global pypi_name mini_eq
